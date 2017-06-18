@@ -14,34 +14,20 @@
 }
 
 #slides {
-    position: relative;
     height: 250px;
     padding: 0px;
     margin: 0px;
-    list-style-type: none;
 }
 
 .slide {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1300px;
+    width: 1335px;
     height: 250px;
-    opacity: 0;
-    z-index: 1;
 }
 
 .showing {
     opacity: 1;
     z-index: 2;
-}
-
-.slide {
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #333;
-    color: #fff;
 }
 
 .slide:nth-of-type(1) {
