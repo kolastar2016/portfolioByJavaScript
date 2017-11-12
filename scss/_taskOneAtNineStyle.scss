@@ -1,0 +1,291 @@
+/*task1*/
+.task1_calc {
+	text-align: center;
+    border-style: outset;
+    width: 44rem;
+    border-spacing: 0.5rem;
+    border-radius: 0.6rem;
+	margin:auto;
+	background-color: yellow;
+}
+
+.task1_scr {
+	color: white;
+    width: 41rem;
+    height: 8rem;
+	font-size: 20pt;
+    border-style: ridge;
+    border-color: grey;
+	border-radius: 2.5rem;
+    margin-top: 0.4rem;
+    margin-left: auto;
+    background: linear-gradient(grey,white);
+}
+
+.task1_button{
+    color: white;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 2.5rem;
+    font-size: 20pt;
+    background: blue;
+}
+
+/*task2*/
+#task2 {
+	max-height: 96rem;
+	overflow-y: scroll;
+}
+
+#matr1{
+	display:inline-block;
+	margin: 0.8rem;
+	background-color: blue;
+}
+
+#matr2{
+	display:inline-block;
+	margin: 0.4rem;
+	background-color: blue;
+}
+
+#matr3{
+	display:inline-block;
+	margin: 0.8rem;
+	background-color: yellow;
+}
+
+#inp_task2{
+	width: 4rem;
+	height: 4rem; 
+	margin: 0.5rem;
+}
+
+#divbutmatr{
+	display: inline-block;
+}
+
+.matr_task2{
+	display: inline-block;
+	text-align: center;
+	margin: -6rem -0.4rem;
+	font-size: 2.1rem;
+	color: blue;
+	padding: 1rem 1rem;
+	border: 0.3rem solid blue;
+	width: 10rem;
+	border-radius: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+/*task3*/
+.btn_task3{
+	font-size: 2rem;
+	color: blue;
+	padding: 1rem 2rem;
+	border: 0.2rem solid blue;
+	width: auto;
+	border-radius: 2.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: inline-block;
+	font-weight: bold;
+    text-align: center;
+}
+
+.input_task3{
+	color: white;
+  	font-size: 20pt;
+	margin-top: 2rem;
+    border-color: grey;
+	background: linear-gradient(grey,white);
+}
+
+.label_task3{
+	font-size: 2rem;
+    color: red;
+}
+
+/*task4*/
+
+
+/*task5*/
+#button_task5_button{
+	display: inline-block;
+	text-align: center;
+	margin: 1rem 5rem;
+	font-size: 2.1rem;
+	color: blue;
+	padding: 1rem 1rem;
+	border: 0.2rem solid blue;
+	width: 17rem;
+	border-radius: 2.5rem;
+}
+
+/*task6*/
+.label_task6{
+	font-size: 2rem;
+    color: red;
+}
+
+.input_task6{
+	color: blue;
+  	font-size: 20pt;
+	margin-top: 2rem;
+    border-color: blue;
+	background: white;
+} 
+
+/*task7*/
+.label_task7{
+	font-size: 2rem;
+    color: red;
+}
+
+.input_task7{
+	color: blue;
+  	font-size: 20pt;
+	margin-top: 2rem;
+    border-color: blue;
+	background: white;
+} 
+
+/*task8*/
+.block_task8{
+	font-size: 5rem;
+    color: red;
+	text-align: center;
+	margin-left: 15rem;
+}
+
+.month_block_task8{
+	font-size: 2rem;
+	color: blue;
+	border: 1rem solid red;
+}
+
+.day_block_task8{
+	font-size: 2rem;
+	color: blue;
+	border: 1rem solid red;
+}
+
+.znak_block_task8{
+	font-size: 3rem;
+	color: blue;
+	border: 1rem solid red;
+}
+
+.button_task8{
+	display: inline-block;
+	text-align: center;
+	margin: 1rem 5rem;
+	font-size: 2.1rem;
+	color: blue;
+	padding: 1rem 1rem;
+	border: 0.2rem solid blue;
+	width: 17rem;
+	border-radius: 2.5rem;
+}
+
+/*task9*/
+.days_task9{
+	width:20rem;
+	font-size:2rem;
+	color: blue;
+	margin-top: 2rem;
+	margin-left: 5rem;
+    border-color: blue;
+	background: white;
+}
+
+.monthes_task9{
+	width:20rem;
+	font-size:2rem;
+	color: blue;
+	margin-top: 2rem;
+	margin-left: 5rem;
+    border-color: blue;
+	background: white;
+}
+.years_task9{
+	width:20rem;
+	font-size:2rem;
+	color: blue;
+	margin-top: 2rem;
+	margin-left: 5rem;
+    border-color: blue;
+	background: white;
+}
+
+.buttonEqually_task9{
+	font-style: italic; 
+	font-weight: bold; 
+	animation: colorchange 20s infinite;
+	position: absolute; 
+	display: inline-block;
+	text-align: center;
+	margin: 1rem 5rem;
+	font-size: 2.1rem;
+	color: blue;
+	padding: 1rem 1rem;
+	border: 0.2rem solid blue;
+	width: 17rem;
+	border-radius: 2.5rem;
+}
+
+.equally_task9{
+	width:20.5rem; 
+	color:#313131; 
+	font-size:4rem; 
+	font-weight: bold;
+	margin-left: 60rem;	
+	animation:colorchange 20s infinite; 
+	position: absolute; 
+}
+
+@keyframes colorchange {
+    0% {
+		color: blue;
+    }
+    
+	10% {
+        color: #8e44ad;
+    }
+      
+    20% {
+        color: #1abc9c;
+    }
+      
+    30% {
+        color: #d35400;
+    }
+      
+    40% {
+        color: blue;
+    }
+      
+    50% {
+        color: #34495e;
+    }
+      
+    60% {
+        color: blue;
+    }
+      
+    70% {
+        color: #2980b9;
+    }
+	
+	80% {
+		color: #f1c40f;
+    }
+      
+    90% {
+        color: #2980b9;
+    }
+      
+    100% {
+        color: pink;
+    }
+}

@@ -12,12 +12,30 @@ quotes[5] = "Site ?";
 var counter = 0;
   function loop() {
     if (counter > 5) counter = 0;
-    document.getElementById('textslide').firstElementChild.innerHTML = quotes[counter];
+    document.getElementById('textslide').innerHTML = quotes[counter];
     counter++;
     setTimeout(loop, 900);
 }
 
 loop();
+
+/*
+//Slide image
+var myIndex = 0;
+function slidesImg(){
+	var x = document.getElementsByClassName("slide");
+	for ( var i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+		myIndex = 1
+	}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(slidesImg, 2000); // Change image every 2 seconds
+}
+slidesImg();
+*/
 
 /*move slider img*/
 var slides = document.querySelectorAll('#slides .slide');
@@ -27,7 +45,7 @@ var slideInterval = setInterval(nextSlide,1000);
 function nextSlide() {
   slides[currentSlide].className = 'slide';
   currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = 'slide showing';
+  slides[currentSlide].className = 'slide';
 }
 
 var playing = true;
@@ -44,11 +62,3 @@ function playSlideshow() {
   playing = true;
   slideInterval = setInterval(nextSlide,1000);
 }
-
-pauseButton.onclick = function() {
-  if(playing) {
-    pauseSlideshow();
-  } else {
-    playSlideshow();
-  }
-};
