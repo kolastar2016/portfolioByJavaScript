@@ -1,48 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LearnJavaScript</title>
-    <link rel="stylesheet" href="./css/pages/home.css">
-   
+  <meta charset="UTF-8">
+  <title>LearnJavaScript</title>
+  <link rel="stylesheet" href="./css/pages/home.css">
 </head>
 <body>
-<section>
+  <!--header-->
   <section>
-    <div id="textslide" class="textslide"><p></p></div>
+    <div id="textslide" class="textSlide"></div>
     <ul id="slides" class="slides">
-      <img class="slide" src="img/slide1.jpg">
-      <img class="slide" src="img/slide2.jpg">
-      <img class="slide" src="img/slide3.jpg">
-      <img class="slide" src="img/slide4.jpg">
-      <img class="slide" src="img/slide5.jpg">
+      <center><img class="slide" src="img/slide1.jpg"></center>
+      <center><img class="slide" src="img/slide2.jpg"></center>
+      <center><img class="slide" src="img/slide3.jpg"></center>
+      <center><img class="slide" src="img/slide4.jpg"></center>
+      <center><img class="slide" src="img/slide5.jpg"></center>
     </ul>
-  <button id="pause" class="slider_pause">Pause</button>
   </section>
+  <!--left body-->
   <section id="left" class= "left">
-     <div id="menu" class="h4"> ЭЛЕМЕНТЫ МЕНЮ
-    <div id="btask1" class="vmenu h3" > ЗАДАЧА1</div> 
-     <div id="btask2" class="vmenu h3"> ЗАДАЧА2</div> 
-     <div id="btask3" class="vmenu h3" > ЗАДАЧА3</div>
-   <div id="btask4" class="vmenu h3" > ЗАДАЧА4</div>
+    <div class="h4">Номера заданий</div>
+    <div id="menu" class="h4"> 
+      <div id="btask1" class="btn_task btn-made " tabindex="0"> ЗАДАЧА1</div> 
+      <div id="btask2" class="btn_task btn-made" tabindex="0"> ЗАДАЧА2</div> 
+      <div id="btask3" class="btn_task btn-made" tabindex="0"> ЗАДАЧА3</div>
+      <div id="btask4" class="btn_task " tabindex="0"> ЗАДАЧА4</div>
+      <div id="btask5" class="btn_task btn-made" tabindex="0"> ЗАДАЧА5</div> 
+      <div id="btask6" class="btn_task btn-made" tabindex="0"> ЗАДАЧА6</div> 
+      <div id="btask7" class="btn_task btn-made" tabindex="0"> ЗАДАЧА7</div>
+      <div id="btask8" class="btn_task btn-made" tabindex="0"> ЗАДАЧА8</div>
+      <div id="btask9" class="btn_task btn-made" tabindex="0"> ЗАДАЧА9</div> 
+      <div id="btask10" class="btn_task " tabindex="0"> ЗАДАЧА10</div> 
+      <div id="btask11" class="btn_task btn-made" tabindex="0"> ЗАДАЧА11</div>
+      <div id="btask12" class="btn_task btn" tabindex="0"> ЗАДАЧА12</div>
+      <div id="btask13" class="btn_task btn" tabindex="0"> ЗАДАЧА13</div> 
+      <div id="btask14" class="btn_task btn" tabindex="0"> ЗАДАЧА14</div> 
+      <div id="btask15" class="btn_task btn" tabindex="0"> ЗАДАЧА15</div>
+      <div id="btask16" class="btn_task btn-made" tabindex="0"> ЗАДАЧА16</div>
+      <div id="btask17" class="btn_task btn" tabindex="0"> ЗАДАЧА17</div> 
+      <div id="btask18" class="btn_task btn" tabindex="0"> ЗАДАЧА18</div> 
+      <div id="btask19" class="btn_task " tabindex="0"> ЗАДАЧА19</div>
+      <div id="btask20" class="btn_task " tabindex="0"> ЗАДАЧА20</div>
+      <div id="btask21" class="btn_task btn" tabindex="0"> ЗАДАЧА21</div> 
+      <div id="btask22" class="btn_task " tabindex="0"> ЗАДАЧА22</div> 
+      <div id="btask23" class="btn_task btn" tabindex="0"> ЗАДАЧА23</div>
+      <div id="btask24" class="btn_task btn" tabindex="0"> ЗАДАЧА24</div>
+      <div id="btask25" class="btn_task btn" tabindex="0"> ЗАДАЧА25</div> 
+      <div id="btask26" class="btn_task btn" tabindex="0"> ЗАДАЧА26</div> 
+      <div id="btask27" class="btn_task " tabindex="0"> ЗАДАЧА27</div>
+      <div id="btask28" class="btn_task btn" tabindex="0"> ЗАДАЧА28</div>
+      <div id="btask29" class="btn_task btn" tabindex="0"> ЗАДАЧА29</div> 
+      <div id="btask30" class="btn_task btn" tabindex="0"> ЗАДАЧА30</div> 
+      <div id="btask31" class="btn_task btn-made" tabindex="0"> ЗАДАЧА31</div>
+      <div id="btask32" class="btn_task " tabindex="0"> ЗАДАЧА32</div>
+      <div id="btask33" class="btn_task " tabindex="0"> ЗАДАЧА33</div> 
+      <div id="btask34" class="btn_task btn-made" tabindex="0"> ЗАДАЧА34</div> 
+      <div id="btask35" class="btn_task " tabindex="0"> ЗАДАЧА35</div>
     </div>
   </section>
+  <!--right body-->
   <section id="right" class="right">
-    <div id="content" class="content h4">СОДЕРЖИМОЕ СТРАНИЦЫ
-  <div id="task1">ЗАДАЧА1 </div>     
-  <div id="task2">ЗАДАЧА2 </div>    
-    <div id="task3">ЗАДАЧА3 </div>
-    <div id="task4">ЗАДАЧА4 </div>
-  </div>
+    <div class="h4">Содержимое задания</div><hr>
+    <div id="content" class="content h4">
+      <!-- Taks 1 -->
+      <div id="task1"><p>ЗАДАЧА1</p>Написать программу Калькулятор. Ввод данных и вывод результатов осуществить в одном и том же текстовом поле. Калькулятор должен содержать кнопки для ввода чисел, арифметических операций, кнопку для удаления последнего введеного символа и др.<hr>     
+        <div class = 'task1_calc' id="dvcalc">
+          <form name="calc" name="calc">
+            <textarea  class = 'task1_scr' id="scr"  name="scr" type="text" placeholder="0"></textarea><br>
+            <div id="dvbut">
+              <input class = 'task1_button' id="clean" type="button" name="clean" value="C">
+              <input class = 'task1_button' id="memread" type="button" name="memread" value="MR">
+              <input class = 'task1_button' id="memclean" type="button" name="memclean" value="MC">
+              <input class = 'task1_button' id="bs" type="button" name="bs" value="&#9668">
+              <input class = 'task1_button' id="eq" type="button" name="eq" value="=">
+              <br>
+              <input class = 'task1_button' type="button" value="1" data-v="1">
+              <input class = 'task1_button' type="button" value="2" data-v="2">
+              <input class = 'task1_button' type="button" value="3" data-v="3">
+              <input class = 'task1_button' id="pm" type="button" name="pm" value="&#177" >
+              <input class = 'task1_button' type="button" value="(" data-v="(">
+              <br>
+              <input class = 'task1_button' type="button" value="4" data-v="4">
+              <input class = 'task1_button' type="button" value="5" data-v="5">
+              <input class = 'task1_button' type="button" value="6" data-v="6">
+              <input class = 'task1_button' type="button" value="/" data-v="/">
+              <input class = 'task1_button' type="button" value=")" data-v=")">
+              <br>
+              <input class = 'task1_button' type="button" value="7" data-v="7">
+              <input class = 'task1_button' type="button" value="8" data-v="8">
+              <input class = 'task1_button' type="button" value="9" data-v="9">
+              <input class = 'task1_button' type="button" value="*" data-v="*">
+              <input class = 'task1_button' type="button" name="mplus" value="M+" >
+              <br>
+              <input class = 'task1_button' type="button" value="+" data-v="+">
+              <input class = 'task1_button' type="button" value="0" data-v="0">
+              <input class = 'task1_button' type="button" value="-" data-v="-">
+              <input class = 'task1_button' type="button" value="." data-v=".">
+              <input class = 'task1_button' type="button" name="mmin" value="M-" >
+              <br>
+              <br>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Taks 2 -->
+      <div id="task2">
+        <p>ЗАДАЧА2</p>Написать программу Матричный калькулятор, который  выполняет две операции - сложение и умножение двух матриц. Программа должна запросить у пользователя число n - размерность матрицы (квадратной). И по заданному пользователем n вывести на страницу две  формы для ввода чисел в матрицы размерностью n*n и форму для вывода результата- тоже матрицу размерностью n*n.<hr>   
+        <div id="matrixsall">
+          <label for="dimantion"> Размерность матрицы: </label>
+          <select id="dimantion">
+            <option>1*1</option>
+            <option>2*2</option>
+            <option>3*3</option>
+            <option>4*4</option>
+            <option>5*5</option>
+            <option>6*6</option>
+            <option>7*7</option>
+          </select>
+          <div id="matrixs"></div>
+        </div>
+      </div>
+      <!-- Taks 3 -->
+      <div id="task3">
+        <p>ЗАДАЧА3</p>Написать программу, проверяющую корректность  введенных пользователем данных в регистрационную форму. Должны быть рассмотрены следующие варианты: все поля заполнены, имя состоит только из допустимых символов, поле e-mail содержит @ и точку, поле пароль состоит только из латинских букв и цифр, и обязательно содержит хотя бы одну цифру, длина пароля не менее 7 символов, совпадение пароля и повторного пароля.<hr>
+        <form name="regform" action="JavaScript:" method="post">
+          <input class='input_task3' type="text" name="nameuser" id="nameuser" placeholder="имя" required >
+          <label class='label_task3' id="lnameuser" for="nameuser"></label><br>
+          <input class='input_task3' type="text" name="email" id="email" placeholder="почта">
+          <label class='label_task3' for="email" id="lemail"></label><br>
+          <input class='input_task3' type="password" name="pas1" id="pas1" placeholder="пароль1">
+          <label class='label_task3' for="pas1" id="lpas1"></label><br>
+          <input class='input_task3' type="password" name="pas2" id="pas2" placeholder="пароль2">
+          <label class='label_task3' for="pas2" id="lpas2"></label><br>
+          <input class='btn_task3' type="button" name="subm" value="отправить">
+        </form>
+      </div>
+      <!-- Taks 4 -->
+      <div id="task4">
+        <p>ЗАДАЧА4</p>Написать программу тест. Пользователь отвечает  на ряд вопросов, выбирая варианты ответов из предложенных. Выполнить проверку результатов и выдать пользователю соответствующее сообщение (например, о количестве правильных ответов)<hr></div>
+      <!-- Taks 5 -->
+      <div id="task5">
+        <p>ЗАДАЧА5</p>Спросить у пользователя имя и сколько ему лет и вывести на страницу сообщение. Привет, Имя пользователя!  Вам  X  лет, года, годика или годиков – выбрать одно из значений в зависимости от цифры, указанной пользователем. (Например, 2 годика, 20 лет, но 43 года и т.п.)<hr>
+        <button id='button_task5_button'>Question</button>
+      </div>
+      <!-- Taks 6 -->    
+      <div id="task6">
+        <p>ЗАДАЧА6</p>На экране задано три поля – для введения числа, месяца и года соответственно. Проверить корректность введенных данных. А именно месяц – число от 0 до 12, день число от 0 до 28|29|30|31 (в зависимости от месяца и года.)<hr>
+        <input class='input_task6' type='text' id='year' placeholder='year'>
+        <label class='label_task6' id='year_task6_write'></label>
+        <input class='input_task6' type='text' id='month' placeholder='month'>
+        <label class='label_task6' id='month_task6_write'></label>
+        <input class='input_task6' type='text' id='day' placeholder='day'>
+        <label class='label_task6' id='day_task6_write'></label>
+      </div>
+      <!-- Taks 7 -->
+      <div id="task7">
+        <p>ЗАДАЧА7</p>По введенному пользователем году рождения – вывести его знак по  китайському гороскопу.<hr>
+        <input class='input_task7' type='text' id='year7' placeholder='year'>
+        <label class='label_task7' id='year_task7_write'></label>
+      </div>
+      <!-- Taks 8 -->
+      <div id="task8">
+        <p>ЗАДАЧА8</p>По введенной пользователем дате рождения определить знак зодиака пользователя.<hr>
+        <form class = 'block_task8' name="znak_zodiac">Месяц
+          <select class = 'month_block_task8' name="your_month">
+            <option value="0"></option>
+            <option value="1">Январь</option>
+            <option value="2">Февраль</option>
+            <option value="3">Март</option>
+            <option value="4">Апрель</option>
+            <option value="5">Май</option>
+            <option value="6">Июнь</option>
+            <option value="7">Июль</option>
+            <option value="8">Август</option>
+            <option value="9">Сентябрь</option>
+            <option value="10">Октябрь</option>
+            <option value="11">Ноябрь</option>
+            <option value="12">Декабрь</option>
+          </select> &nbsp;День
+          <input class = 'day_block_task8' type="text" name="your_date" size="2">
+          <input class ='button_task8' type="button" value="Узнать" onClick="learn_sign()">
+          <br><br>Ваш знак Зодиака - 
+          <input class = 'znak_block_task8' type="text" name="znak" size="15">
+        </form>
+      </div>
+      <!-- Taks 9 -->    
+      <div id="task9">
+        <p>ЗАДАЧА9</p>Определить вибрирующее число по введенной дате рождения. Вибрирующее число в нумерологии – это сумма цифр, расположенных в дате рождения. Если в результате будет двузначное число, то для него снова вычисляется сумма цифр и так до тех. пор, пока не получим однозначное число. (Например, 11.07.1999. 1+1+0+7+1+9+9+9=37   3+7=10   1+0=1 – вибрирующее число).<hr>
+        <input class='days_task9' id ="days" type="text" placeholder="day">
+        <input class='monthes_task9' id = "monthes" type="text" placeholder="month">
+        <input class='years_task9' id = "years" type="text" placeholder="year">
+        <input class='buttonEqually_task9' id="buttonEqually" type = "button" value="equally">
+        <p class='equally_task9' id = "equallys"></p>
+      </div>
+      <!-- Taks 10 -->
+      <div id="task10">
+        <p>ЗАДАЧА10</p>Реализовать игру в числа. Компьютер “загадывает” четырехзначное число с неповторяющимися цифрами и не начинающееся с нуля. Пользователь должен за десять ходов угадать это число. После каждого хода компьютер анализирует число введенное пользователем и выдает результат в виде:  3:2 -   это означает, что 3 цифры угадано, но только две из них стоят на своих местах. Если пользователь не угадал число полностью за десять ходов – то он проиграл. Данные и результаты всех ходов текущей игры отображать на странице до.<hr>
+      </div>
+      <!-- Taks 11 -->
+      <div id="task11">
+        <p>ЗАДАЧА11</p>Добавить в стандартный встроенный объект String метод, обрезающий строку, если ее длина более 30 символов и добавляющий в конец такой строки троеточие. Применить этот метод ко всем строкам списка, размещенного на странице.<hr>
+        <p>Добавить в стандартный встроенный объект String метод, обрезающий строку, если ее длина более 30 символов и добавляющий в конец такой строки троеточие. Применить этот метод ко всем строкам списка, размещенного на странице.</p>
+        <p>Click the button to extract characters from the string.</p>
+        <button class='button_task11'onclick="Task11()">Try it</button>
+        <p id="write_task11"></p>
+      </div>
+      <!-- Taks 12 -->    
+      <div id="task12">
+        <p>ЗАДАЧА12</p>Добавить в стандартный встроенный объект Date метод, который подсчитывает количество дней между двумя датами. Применить этот метод к датам, заданным пользователем.<hr>
+      </div>
+      <!-- Taks 13 -->
+      <div id="task13">
+        <p>ЗАДАЧА13</p>Добавить в стандартный встроенный объект String метод, который переписывает строку в обратном порядке. Применить этот метод к строке, введенной пользователем.<hr>
+<!--         <p class='input_task13' type='text' id='input_task13' placeholder='text'>Добавить в стандартный встроенный объект</p>
+        <p id='write_task13'></p> -->
+      </div>
+      <!-- Taks 14 -->
+      <div id="task14">
+        <p>ЗАДАЧА14</p>Добавить в стандартный встроенный объект String метод, который возвращает количество заданных символов в  строке.   Применить этот метод к строке, введенной пользователем. При этом символ для поиска тоже задает пользователь.<hr>
+      </div>
+      <!-- Taks 15 -->
+      <div id="task15">
+        <p>ЗАДАЧА15</p>Добавить в стандартный встроенный объект String метод, который удаляет из строки лишние пробелы в начале, в конце  и в середине строки. В середине строки несколько пробелов, идущих подряд заменяется на один.<hr>
+      </div>
+      <!-- Taks 16 -->
+      <div id="task16">
+        <p>ЗАДАЧА16</p>Разместить на странице бегущую строку средствами  JavaScript (НЕ ИСПОЛЬЗУЯ тег marquee)<hr>
+        <form action="" name="cit" id="cit">
+          <input class='run_task16' type='text' name='forum'>
+        </form>
+      </div>
+      <!-- Taks 17 -->    
+      <div id="task17">
+        <p>ЗАДАЧА17</p>Разместить на странице постепенно увеличивающуюся строку. При достижении определенного размера шрифта  увеличение прекратить. Для изменения размера шрифта использовать JavaScript<hr>
+        <!--<p>
+        <button onclick="myMove()">Click Me</button>
+        </p> 
+        <div id ="container">орпа</div>
+        <div id ="animate">павы</div>-->
+      </div>
+      <!-- Taks 18 -->
+      <div id="task18">
+        <p>ЗАДАЧА18</p>Разместить на странице постепенно уменьшающуюся строку. При достижении определенного размера шрифта строка должна исчезнуть с экрана. Для изменения размера шрифта использовать JavaScript.<hr></div>
+      <!-- Taks 19 -->
+      <div id="task19">
+        <p>ЗАДАЧА19</p>Разместить на web-странице информацию о том, как долго пользователь находится на данной странице.<hr>
+      </div>
+      <!-- Taks 20 -->    
+      <div id="task20">
+        <p>ЗАДАЧА20</p>На странице размещен список терминов, при щелчке мыши на каждом из них должен появится абзац с расшифровкой указанного термина, вверху каждого абзаца с расшифровкой должна появиться маленькая кнопочка х, позволяющая закрыть (убрать с экрана поясняющий текст).<hr>
+      </div>
+      <!-- Taks 21 -->
+      <div id="task21">
+        <p>ЗАДАЧА21</p>В таблице размещен список покупок пользователя, вычислить общую сумму покупки и добавить ее на страницу под таблицей по нажатию кнопки "Вычислить".<hr>
+      </div>
+      <!-- Taks 22 -->
+      <div id="task22">
+        <p>ЗАДАЧА22</p>На экране задана некоторая таблица. И две кнопки "ДОБАВИТЬ" и "УДАЛИТЬ", позволяющие пользователю  добавить (удалить) строку в (из) таблицы. По кнопке добавить должна быть реализована возможность не только добавления пустой строки, но и возможность указать данные, размещаемые в этой строке.<hr>
+      </div>
+      <!-- Taks 23 -->    
+      <div id="task23">
+        <p>ЗАДАЧА23</p>На экране задана кнопка. При попытке наведении мыши на кнопку - кнопка отскакивает на произвольное расстояние от курсора мыши. Кнопка не должна уходить  за пределы окна документа.<hr>
+      </div>
+      <!-- Taks 24 -->
+      <div id="task24">
+        <p>ЗАДАЧА24</p>Розробіть найпростішу анімацію засобами JavaScript – пересування зображення  м’яча (або іншого) зправа наліво або зліва направо в залежності від вибору користувача. Вибір напрямку руху  здійснюється користувачем у діалоговому вікні. Зображення не повинно виходити за межі документу<hr>
+      </div>
+      <!-- Taks 25 -->
+      <div id="task25">
+        <p>ЗАДАЧА25</p>Розробіть найпростішу анімацію засобами JavaScript – пересування зображення  м’яча (або іншого) зверху вниз або знизу вверх в залежності від вибору користувача. Вибір напрямку руху  здійснюється користувачем у діалоговому вікні. Зображення не повинно виходити за межі документу<hr>
+      </div>
+      <!-- Taks 26 -->    
+      <div id="task26">
+        <p>ЗАДАЧА26</p>Розробіть засобами JavaScript сторінку, що містить текст, що пересувається зпарва наліво або зліва направо в залежності від вибору користувача. Вибір здійснюється за допомогою відповідної кнопки або за допомогою перемикачів розташованих на сторінці.<hr>
+      </div>
+      <!-- Taks 27 -->
+      <div id="task27">
+        <p>ЗАДАЧА27</p>Небольшое изображение по щелчку мыши на нем начинает перемещаться за курсором и по повторному клику остается на  месте клика.<hr>
+      </div>
+      <!-- Taks 28 -->
+      <div id="task28">
+        <p>ЗАДАЧА28</p>Небольшое изображение медленно перемещается по координатам указанным на экране с помощью клика мыши.<hr>
+      </div>
+      <!-- Taks 29 -->    
+      <div id="task29">
+        <p>ЗАДАЧА29</p>Создать галерею изображений на странице. С возможностью выбора отображаемой картинки<hr>
+      </div>
+      <!-- Taks 30 -->
+      <div id="task30">
+        <p>ЗАДАЧА30</p>Создать «слайдер» на странице с четырьмя кнопками – для перемещения по изображениям вверх/вниз (например, по тематике изображений – цветы, животные, мебель) и влево/вправо (по изображениям внутри  каждой тематики).<hr>
+      </div>
+      <!-- Taks 31 -->
+      <div id="task31">
+        <p>ЗАДАЧА31</p>Реализовать программу «будильник». Основные функции: включение-выключение, ввод даты и времени. Учесть возможность включения произвольного количества будильников, а также просмотр «заведенных будильников». При достижении времени срабатывания, заданого для будильника, выдавать всплывающее окно с сообщением.<hr>
+        <div id="currentTime"></div>
+        <table id="mainT">
+          <tr>
+            <td>Будильник</td>
+            <td>Стан</td>
+            <td>Часи</td>
+            <td>Хвилини</td>
+            <td>Секунди</td>
+            <td>День</td>
+            <td>Місяць</td>
+            <td>Рік</td>
+            <td></td>
+            <td> <input class='button_task31' type="button" value=" + " onClick="AddTims();">  </td>
+          </tr>
+        </table>
+      </div>
+      <!-- Taks 32 -->
+      <div id="task32">
+        <p>ЗАДАЧА32</p>Разработать программу вывода и навигации по компоненту «дерево» (сворачивания / разворачивания веток) на основе многомерного массива Javascript.<hr>
+      </div>
+      <!-- Taks 33 -->    
+      <div id="task33">
+        <p>ЗАДАЧА33</p>Реализовать программу «Слайд-шоу» с возможностью просмотра изображений по таймеру, программа должна предоставлять пользователю возможность настройки размера изображений, цикличности просмотра, а также времени между переключениями изображений<hr></div>
+      <!-- Taks 34 -->
+      <div id="task34">
+        <p>ЗАДАЧА34</p>Реализовать возможность ввода произвольного количества цифр в элементы формы и построения нормализованной по максимальному числу гистограммы значений этих полей.<hr>
+        <form id="mainForm">
+          <div id="items">
+            <div>
+              <span class='addNumber_task34'>1:</span>
+              <input class='addText_task34' type="text" name="item1"/>
+              <input class='add_buttom_task34' type="button" value=" + " onClick="AddItems();"/> 
+            </div>
+          </div>
+          <input id="buttonGen" type="button" value="Побудувати гістограму" onClick="GetGist();"/>
+        </form>
+        <div id="gist">
+        </div>
+      </div>
+      <!-- Taks 35 -->
+      <div id="task35">
+        <p>ЗАДАЧА35</p>Сформировать многоуровневое меню (горизонтальное и вертикальное), пункты меню взять из статического массива.<hr>
+        <!--<ul id="menu2">
+           <li><a href="/c/31-Интернет">Интернет</a>
+        <ul>
+            <li><a href="/c/36-Блоги">Блоги</a></li>
+            <li><a href="/c/45-Браузеры">Браузеры</a>
+                <ul>
+                    <li><a href="/c/46-Firefox">Firefox</a></li>
+                    <li><a href="/c/47-Internet_Explorer">Internet Explorer</a></li>
+                    <li><a href="/c/48-Opera">Opera</a></li>
+                    <li><a href="/c/49-Safari">Safari</a></li>
+                    <li><a href="/c/50-Google_Chrome">Google Chrome</a></li>
+                </ul>
+            </li>
+             <li><a href="/c/52-Поисковые_системы">Поисковые системы</a></li>
+            <li><a href="/c/57-Социальные_сети">Социальные сети</a></li>
+              </ul>
+          </li>
+               <li><a href="/c/10-Программирование">Программирование</a>
+             <ul>
+            <li><a href="/c/12-JavaScript">JavaScript</a>
+                <ul>
+                    <li><a href="/c/39-Ajax">Ajax</a></li>
+                    <li><a href="/c/81-События">События</a></li>
+                    <li><a href="/c/97-Строки">Строки</a></li>
+          </ul>
+        </li>
+             <li><a href="/c/11-PHP">PHP</a>
+                <ul>
+                    <li><a href="/c/96-Дата_и_время">Дата и время</a></li>
+                    <li><a href="/c/16-Регулярные_выражения">Регулярные выражения</a></li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+               <li><a href="/c/13-Веб-дизайн">Веб-дизайн</a>
+        <ul>
+            <li><a href="/c/14-HTML">HTML</a>
+                <ul>
+                    <li><a href="/c/62-Верстка">Верстка</a></li>
+                </ul>
+            </li>
+        </ul>
+              </li>
+        </ul>
+            </div>-->
+      </div>
+    </div>
+   </section>
+  <!--footer-->
+  <section class="footers">
+    <p class="h4">Shulyak Mikola</p>
+    <p class="h4">Name group: WEB 8</p>
+    <p class="h4">Number variant:  </p>
+    <p id="clock" class="h4"> clock</p>
   </section>
-<footer>
-  <p class="footers h4">Shulyak Mikola</p>
-  <p class="footers h4">Name group: WEB 8</p>
-  <p class="footers h4">Number variant: </p>
-  <p id="clock" class="footers h4"> clock</p>
-</footer>
-</section>
-<!--scripts-->
-<script src="./js/build.js"></script>
+  <!--scripts-->
+  <script src="./js/build.js"></script>
 </body>
 </html>
