@@ -1,56 +1,55 @@
-var equallys = document.querySelector("#equallys");
-var buttonEqually = document.querySelector("#buttonEqually");
-
-buttonEqually.onclick=function(){
-	var days=Number(document.querySelector("#days").value);
-	var monthes=Number(document.querySelector("#monthes").value);
-	var years=Number(document.querySelector("#years").value);
-	if (days<1){
-		alert("Not corection day");
+var taskNineTextEqually = document.querySelector('#taskNineTextEqually');
+var taskNineButtonEqully = document.querySelector('#taskNineButtonEqully');
+taskNineButtonEqully.onclick=function() {
+	var taskNineDay = Number(document.querySelector('#taskNineDay').value);
+	var taskNineMonth = Number(document.querySelector('#taskNineMonth').value);
+	var taskNineYear = Number(document.querySelector('#taskNineYear').value);
+	if (taskNineDay < 1) {
+		alert('Not corection day');
 	}
-	if(days>=1 && days<=9){
-		numberDays = days;
-		daysOne=daysTwo=0;
-	} else if (days>9 && days<32){
-		numberDays=days % 10;
-		daysOne = (days - numberDays)/10;
-		daysTwo = days-(days - numberDays);
-		numberDays=0;
+	if (taskNineDay >= 1 && taskNineDay <= 9) {
+		numberDays = taskNineDay;
+		daysOne = daysTwo = 0;
+	} else if (taskNineDay > 9 && taskNineDay < 32) {
+		numberDays = taskNineDay % 10;
+		daysOne = (taskNineDay - numberDays) / 10;
+		daysTwo = taskNineDay - (taskNineDay - numberDays);
+		numberDays = 0;
 	} else {
-		alert("Not understand day");
+		alert('Not understand day');
 	}
-	if (monthes<1){
-		alert("Not corection month");
-	} else if(monthes>=1 && monthes<=9){
-		numberMonth = monthes;
-		monthesOne=monthesTwo=0;
-	} else if (monthes>9 && monthes<13){
-		numberMonth=monthes % 10;
-		monthesOne = (monthes - numberMonth)/10;
-		monthesTwo = monthes-(monthes - numberMonth);
-		numberMonth=0;   
+	if (taskNineMonth < 1) {
+		alert('Not corection month');
+	} else if (taskNineMonth >= 1 && taskNineMonth <= 9) {
+		numberMonth = taskNineMonth;
+		monthesOne = monthesTwo = 0;
+	} else if (taskNineMonth > 9 && taskNineMonth < 13) {
+		numberMonth = taskNineMonth % 10;
+		monthesOne = (taskNineMonth - numberMonth) / 10;
+		monthesTwo = taskNineMonth - (taskNineMonth - numberMonth);
+		numberMonth = 0;   
 	} else {
-		alert("Not understand month");
+		alert('Not understand month');
 	}
-	if (years<999){
-		alert("Not corection year");
+	if (taskNineYear < 999) {
+		alert('Not corection year');
 	}
-	if(years>=999 && years<=9999){
-		numberYears=years % 1000;
-		yearsOne = (years - numberYears)/1000;
-		yearsTwo = ((years-(years - numberYears))-numberYears%100)/100;
-		yearThree =((numberYears-((years-(years - numberYears))-numberYears%100))-(numberYears - ((years-(years - numberYears))-numberYears%10)))/10;
-		yearFour =(numberYears - ((years-(years - numberYears))-numberYears%10));
+	if (taskNineYear >= 999 && taskNineYear <= 9999){
+		numberYears = taskNineYear % 1000;
+		yearsOne = (taskNineYear - numberYears) / 1000;
+		yearsTwo = ((taskNineYear - (taskNineYear - numberYears)) - numberYears % 100) / 100;
+		yearThree = ((numberYears - ((taskNineYear - (taskNineYear - numberYears)) - numberYears % 100)) - (numberYears - ((taskNineYear - (taskNineYear - numberYears)) - numberYears % 10))) / 10;
+		yearFour = (numberYears - ((taskNineYear - (taskNineYear - numberYears)) - numberYears % 10));
 	} else {
-		alert("Not understand year");
+		alert('Not understand year');
 	}
-	var sume =numberDays + daysOne + daysTwo + numberMonth + monthesOne + monthesTwo + yearsOne + yearsTwo + yearThree + yearFour;
-	if (sume<10){
-		equallys.innerHTML="Your vibration number is  "+sume;
+	var sume = numberDays + daysOne + daysTwo + numberMonth + monthesOne + monthesTwo + yearsOne + yearsTwo + yearThree + yearFour;
+	if (sume < 10) {
+		taskNineTextEqually.innerHTML = 'Your vibration number is  ' + sume;
 	} else {
-		numberSume = sume%10;
-		sumeOne = (sume - numberSume)/10;
+		numberSume = sume % 10;
+		sumeOne = (sume - numberSume) / 10;
 		result = sumeOne + numberSume;
-		equallys.innerHTML="Your vibration number is "+result;
+		taskNineTextEqually.innerHTML = 'Your vibration number is ' + result;
 	}
 }

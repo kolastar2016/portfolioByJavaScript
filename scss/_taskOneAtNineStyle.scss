@@ -1,5 +1,5 @@
 /*task1*/
-.task1_calc {
+.taskOneCalculation {
 	text-align: center;
     border-style: outset;
     width: 44rem;
@@ -9,7 +9,7 @@
 	background-color: yellow;
 }
 
-.task1_scr {
+.taskOneScreen {
 	color: white;
     width: 41rem;
     height: 8rem;
@@ -22,7 +22,7 @@
     background: linear-gradient(grey,white);
 }
 
-.task1_button{
+.taskOneButton{
     color: white;
     height: 8rem;
     width: 8rem;
@@ -32,40 +32,40 @@
 }
 
 /*task2*/
-#task2 {
+.taskTwo {
 	max-height: 96rem;
 	overflow-y: scroll;
 }
 
-#matr1{
+#matr1 {
 	display:inline-block;
 	margin: 0.8rem;
 	background-color: blue;
 }
 
-#matr2{
+#matr2 {
 	display:inline-block;
 	margin: 0.4rem;
 	background-color: blue;
 }
 
-#matr3{
+#matr3 {
 	display:inline-block;
 	margin: 0.8rem;
 	background-color: yellow;
 }
 
-#inp_task2{
+#taskTwoInput {
 	width: 4rem;
 	height: 4rem; 
 	margin: 0.5rem;
 }
 
-#divbutmatr{
+#divbutmat r {
 	display: inline-block;
 }
 
-.matr_task2{
+.taskTwoMatrix {
 	display: inline-block;
 	text-align: center;
 	margin: -6rem -0.4rem;
@@ -79,7 +79,7 @@
 }
 
 /*task3*/
-.btn_task3{
+.taskThreeBtn {
 	font-size: 2rem;
 	color: blue;
 	padding: 1rem 2rem;
@@ -93,7 +93,7 @@
     text-align: center;
 }
 
-.input_task3{
+.taskThreeInput {
 	color: white;
   	font-size: 20pt;
 	margin-top: 2rem;
@@ -101,7 +101,7 @@
 	background: linear-gradient(grey,white);
 }
 
-.label_task3{
+.taskThreeLabel {
 	font-size: 2rem;
     color: red;
 }
@@ -110,7 +110,7 @@
 
 
 /*task5*/
-#button_task5_button{
+.taskFiveButton {
 	display: inline-block;
 	text-align: center;
 	margin: 1rem 5rem;
@@ -123,12 +123,12 @@
 }
 
 /*task6*/
-.label_task6{
+.taskSixLabel {
 	font-size: 2rem;
     color: red;
 }
 
-.input_task6{
+.taskSixInput {
 	color: blue;
   	font-size: 20pt;
 	margin-top: 2rem;
@@ -137,12 +137,12 @@
 } 
 
 /*task7*/
-.label_task7{
+.taskSevenLabel {
 	font-size: 2rem;
     color: red;
 }
 
-.input_task7{
+.taskSevenInput {
 	color: blue;
   	font-size: 20pt;
 	margin-top: 2rem;
@@ -151,32 +151,32 @@
 } 
 
 /*task8*/
-.block_task8{
+.taskEightBlock {
 	font-size: 5rem;
     color: red;
 	text-align: center;
 	margin-left: 15rem;
 }
 
-.month_block_task8{
+.taskEightBlockMonth {
 	font-size: 2rem;
 	color: blue;
 	border: 1rem solid red;
 }
 
-.day_block_task8{
+.taskEightBlockDay {
 	font-size: 2rem;
 	color: blue;
 	border: 1rem solid red;
 }
 
-.znak_block_task8{
+.taskEightSignZodiac {
 	font-size: 3rem;
 	color: blue;
 	border: 1rem solid red;
 }
 
-.button_task8{
+.taskEightButton {
 	display: inline-block;
 	text-align: center;
 	margin: 1rem 5rem;
@@ -189,7 +189,7 @@
 }
 
 /*task9*/
-.days_task9{
+.taskNineDay {
 	width:20rem;
 	font-size:2rem;
 	color: blue;
@@ -199,7 +199,7 @@
 	background: white;
 }
 
-.monthes_task9{
+.taskNineMonth {
 	width:20rem;
 	font-size:2rem;
 	color: blue;
@@ -208,7 +208,7 @@
     border-color: blue;
 	background: white;
 }
-.years_task9{
+.taskNineYear {
 	width:20rem;
 	font-size:2rem;
 	color: blue;
@@ -218,7 +218,7 @@
 	background: white;
 }
 
-.buttonEqually_task9{
+.taskNineButtonEqully {
 	font-style: italic; 
 	font-weight: bold; 
 	animation: colorchange 20s infinite;
@@ -234,7 +234,7 @@
 	border-radius: 2.5rem;
 }
 
-.equally_task9{
+.taskNineTextEqually {
 	width:20.5rem; 
 	color:#313131; 
 	font-size:4rem; 
