@@ -1,28 +1,32 @@
 /*task30*/
+
 /*task31*/
-.button_task31{
+.taskThirtyoneButton {
 	color: white;
     margin-left:3rem;
     border-radius: 2.5rem;
     font-size: 20pt;
     background: blue;
 }
+
 /*task32*/
+
 /*task33*/
+
 /*task34*/
-.addNumber_task34{
+.taskThirtyfourAddNumber {
 	font-size:2.1rem;
 	color: red;
 }
 
-.addText_task34 {
+.taskThirtyfourAddText {
 	color: red;
 	font-size: 1.8rem;
 	border: blue 0.3rem solid;
     height: 2rem;
 }
 
-.add_buttom_task34{
+.taskThirtyfourAddButtom {
 	color: white;
     border-radius: 2.5rem;
     font-size: 20pt;
@@ -36,11 +40,11 @@
     border: blue 0.5rem solid;
 }
 
-#mainForm {
+.taskThirtyfourMainform {
 	float: left;
 }
 
-#gist{
+.taskThirtyfourBarchart {
 	float: right;
 	width: 45rem;
 	margin-right: 2rem;
@@ -49,7 +53,7 @@
 	overflow-y: scroll;
 }
 
-.gst {
+.barChart {
 	border: blue;
 	text-color: blue;
 	position: relative;
@@ -60,20 +64,20 @@
 	z-index: 1rem;
 }
 
-.gst_task34{
+.barChartNext {
 	display:block;
 	background: yellow;
 	text-indent:-999.9rem;
 }
 
-#items div span input {
+.taskThirtyfourItems div span input {
     margin: 0.2rem;
     width: 2.5rem;
     display: inline-table;
     text-align: right;
 }
  
-#buttonGen {
+.taskThirtyfourButtomBarchart {
 	color: white;
     height: 5rem;
     width: 35rem;

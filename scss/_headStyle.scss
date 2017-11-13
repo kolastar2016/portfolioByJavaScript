@@ -1,16 +1,18 @@
 .textSlide {
 	font-size: 5rem;
 	text-align: center;
+	color: purple;
 }
 
 .slides {
-	height: 43rem;
 	padding: 0rem;
 	margin: 0rem;
+	height: 43rem;
 	position: inline-block;	
 }
 
 .slide {
 	height: 43rem;
+	position: absolute;
 	position: inline-block;
 }
